@@ -1,0 +1,153 @@
+/*
+ Theme Name: BP Members lists module
+ Description: Styles BP members list views
+ Author URI: https://buddypress.org/
+	Version: 1.0
+	JS support file: members-list-module-js.js
+	Theme - tested to: twentyfifteen
+ */
+/* ============================================================
+Members-list-panels is a small css snippet to provide
+Styling of the members directory list entries as seen in
+the main Members dir or in the user account my-friends screens
+=============================================================== */
+#buddypress .avatar {
+	border-radius: 50%;
+}
+
+#buddypress #members-list {
+	clear: both;
+	padding-top: 15px;
+}
+
+#buddypress #members-list > li,
+#buddypress #members-list > li .generic-button a {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#buddypress #members-list > li {
+	border-bottom: 0;
+	padding-bottom: 20px;
+	padding-top: 0;
+}
+
+#buddypress #members-list > li .wrap {
+	background: #f7f7f7;
+	padding-bottom: 15px;
+	overflow: hidden;
+	padding-top: 14px;
+}
+
+#buddypress #members-list > li .item-avatar {
+	text-align: center;
+}
+
+#buddypress #members-list > li .item-avatar .avatar {
+	display: inline-block;
+	width: 50%;
+}
+
+#buddypress #members-list > li .item {
+	font-size: 1.0rem;
+	left: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 96%;
+}
+
+#buddypress #members-list > li .item .item-title {
+	display: inline-block;
+}
+
+#buddypress #members-list > li .item .item-title a {
+	display: block;
+	text-align: center;
+}
+
+#buddypress #members-list > li .item .item-title .update {
+	font-size: 12px;
+	text-align: left;
+}
+
+#buddypress #members-list > li .item .activity-read-more a {
+	display: inline;
+}
+
+#buddypress #members-list > li div.action {
+	float: none;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+}
+
+#buddypress #members-list > li div.action .generic-button {
+	display: block;
+	float: none;
+	margin: 0.2em 0;
+}
+
+#buddypress #members-list > li .item-avatar,
+#buddypress #members-list > li .avatar,
+#buddypress #members-list > li .item {
+	float: none;
+}
+
+@media screen and (min-width: 38.75em) {
+	#buddypress #members-list > li {
+		float: left;
+		width: 50%;
+	}
+	#buddypress #members-list > li .wrap {
+		min-height: 400px;
+	}
+	#buddypress #members-list > li:nth-child(odd) {
+		padding-right: 10px;
+	}
+	#buddypress #members-list > li:nth-child(even) {
+		padding-left: 10px;
+	}
+	#buddypress #members-list > li .item-meta {
+		text-align: center;
+	}
+	#buddypress #members-list > li .item {
+		margin: 1rem auto 0;
+		width: 80%;
+	}
+	#buddypress #members-list > li .item .item-title {
+		width: auto;
+	}
+	#buddypress #members-list > li div.action {
+		float: none;
+		position: relative;
+		text-align: center;
+	}
+	#buddypress #members-list > li div.action .generic-button {
+		display: inline-block;
+		float: none;
+		margin: 0.2em 0.2em;
+	}
+}
+
+@media screen and (min-width: 59.6875em) {
+	#buddypress #members-list > li {
+		padding-bottom: 15px;
+		width: 33.3%;
+	}
+	#buddypress #members-list > li .wrap {
+		min-height: 350px;
+	}
+	#buddypress #members-list > li:nth-child(1n+1) {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#buddypress #members-list > li:nth-child(3n+3) {
+		padding-left: 10px;
+		padding-right: 0;
+	}
+	#buddypress #members-list > li:nth-child(3n+1) {
+		padding-left: 0;
+		padding-right: 10px;
+	}
+}
